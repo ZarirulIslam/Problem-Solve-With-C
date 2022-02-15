@@ -7,9 +7,13 @@ int main()
 
     for(row=1; row<=n; row++)
     {
-        for(col=1; col<=row; col++)
+        for(col=n; col>row; col--)
         {
-            printf("%d ",col);
+            printf("  ");
+        }
+        for(col=1; col<=row*2-1; col++)
+        {
+            printf("* ");
         }
         printf("\n");
     }

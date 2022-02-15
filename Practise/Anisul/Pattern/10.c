@@ -13,5 +13,13 @@ int main()
         }
         printf("\n");
     }
+    for(row=2; row<=n; row++)
+    {
+        for(col=n;col>=row;col--)
+        {
+            printf("%d ",col);
+        }
+        printf("\n");
+    }
     return 0;
 }
